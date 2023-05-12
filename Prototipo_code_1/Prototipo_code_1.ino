@@ -80,7 +80,7 @@ void loop()
     Serial.print("La cuenta muy mala es: ");
     Serial.println(cuenta_muy_mala);
     digitalWrite(ledPin,HIGH);//Turn the LED on
-    display.print(String(cuenta_muy_mala));
+    display.print(String(cuenta_muy_mala) + "MM");
     delay(1000);
   }
   //_____________________Malo________________________________ 
@@ -93,6 +93,7 @@ void loop()
     Serial.print("La cuenta mala es: ");
     Serial.println(cuenta_mala);
     digitalWrite(ledPin,HIGH);//Turn the LED on
+    display.print(String(cuenta_mala) + "M");
     delay(1000);
   }
   //_____________________Bueno_______________________________ 
@@ -105,6 +106,7 @@ void loop()
     Serial.print("La cuenta buena es: ");
     Serial.println(cuenta_buena);
     digitalWrite(ledPin,HIGH);//Turn the LED on
+    display.print(String(cuenta_buena) + "B");
     delay(1000);
   }
   //_____________________Muy bueno___________________________
@@ -117,6 +119,7 @@ void loop()
     Serial.print("La cuenta muy buena es: ");
     Serial.println(cuenta_muy_buena);
     digitalWrite(ledPin,HIGH);//Turn the LED on
+    display.print(String(cuenta_muy_buena) + "MB");
     delay(1000);
   }
   else
